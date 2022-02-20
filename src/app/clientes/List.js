@@ -9,9 +9,9 @@ const instance = axios.create(AXIOS_CONF_PUBLIC);
 const List = () => {
   const [clientes, setClientes] = useState(0);
 
-  const getBases = async () => {
+  const getClientes = async () => {
     try {
-      const { data } = await instance.get(`/clientes`);
+      const { data } = await instance.get(`/clientes?filters[$and][0][estado][$eq]=true`);
       setClientes(data.data);
       console.log(data.data);
     } catch (error) {
@@ -20,9 +20,8 @@ const List = () => {
   };
 
 
-
   useEffect(() => {
-    getBases();
+    getClientes();
   }, []);
 
   return (
@@ -57,7 +56,7 @@ const List = () => {
                       <td>
 
                       <Link to={`/cliente/${cliente.id}`} className="btn btn-gradient-primary btn-fw">Editar</Link>
-
+                      
                       </td>
                     </tr>
                   ))}

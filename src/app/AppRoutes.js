@@ -70,8 +70,8 @@ class AppRoutes extends Component {
 
           <Route path="/general-pages/blank-page" component={ BlankPage } />
 
-          <Route path="/clientes/new" component={ RegistrarCliente } />
           <Route path="/clientes" component={ ListadoCliente } />
+          <Route path="/cliente/new" component={ RegistrarCliente } />
           <Route path="/cliente/:id" component={ EditarCliente } />
 
 
