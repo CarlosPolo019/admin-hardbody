@@ -36,6 +36,10 @@ const RegistrarCliente = lazy(() => import('./clientes/Create'));
 const ListadoCliente = lazy(() => import('./clientes/List'));
 const EditarCliente = lazy(() => import('./clientes/Edit'));
 
+const RegistrarProducto = lazy(() => import('./productos/Create'));
+const ListadoProducto = lazy(() => import('./productos/List'));
+const EditarProducto = lazy(() => import('./productos/Edit'));
+
 
 class AppRoutes extends Component {
   render () {
@@ -73,6 +77,11 @@ class AppRoutes extends Component {
           <Route path="/clientes" component={ ListadoCliente } />
           <Route path="/cliente/new" component={ RegistrarCliente } />
           <Route path="/cliente/:id" component={ EditarCliente } />
+
+          <Route path="/productos" component={ ListadoProducto } />
+          <Route path="/producto/new" component={ RegistrarProducto } />
+          <Route path="/producto/:id" component={ EditarProducto } />
+
 
 
           <Redirect to="/dashboard" />

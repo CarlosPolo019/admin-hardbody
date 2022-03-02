@@ -140,7 +140,7 @@ i18n
                 "Calendar":                     "التقويم",
                 "Help":                         "مساعدة",
                 "Documentation":                "توثيق",
-                "David Greymaax":                  "ديفيد جريماكس",
+                "Aldair Gomez":                  "ديفيد جريماكس",
                 "Project Manager":"مدير المشروع",
                 "Take Tour":                    "خذ جولة",
                 "Log Out":                      "تسجيل خروج",

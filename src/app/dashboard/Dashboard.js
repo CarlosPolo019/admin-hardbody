@@ -282,10 +282,10 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-danger card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Weekly Sales <i className="mdi mdi-chart-line mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Usuarios registrados <i className="mdi mdi-chart-line mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">$ 15,0000</h2>
-                <h6 className="card-text">Increased by 60%</h6>
+                <h2 className="mb-5">$ Agregar contador de usuarios</h2>
+                <h6 className="card-text">Agregar porcentaje actual x el mes anterior</h6>
               </div>
             </div>
           </div>
@@ -293,10 +293,10 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-info card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Weekly Orders <i className="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Personal que paga por dia <i className="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">45,6334</h2>
-                <h6 className="card-text">Decreased by 10%</h6>
+                <h2 className="mb-5">Sumatoria total</h2>
+                <h6 className="card-text">Decreased by 10% / con respento al dia anterior</h6>
               </div>
             </div>
           </div>
@@ -304,10 +304,10 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-success card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Visitors Online <i className="mdi mdi-diamond mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Movimientos totales x dia<i className="mdi mdi-diamond mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">95,5741</h2>
-                <h6 className="card-text">Increased by 5%</h6>
+                <h2 className="mb-5">Sumatoria total</h2>
+                <h6 className="card-text">Preguntar si quiere valores anterios </h6>
               </div>
             </div>
           </div>
@@ -383,7 +383,8 @@ export class Dashboard extends Component {
                     <tbody>
                       <tr>
                         <td>
-                          <img src={require("../../assets/images/faces/face1.jpg")} className="mr-2" alt="face" /> David Grey </td>
+                          <img src={require("../../assets/images/faces/face1.jpg")} className="mr-2" alt="face" /> Aldair Gomez
+                           </td>
                         <td> Fund is not recieved </td>
                         <td>
                           <label className="badge badge-gradient-success">DONE</label>
