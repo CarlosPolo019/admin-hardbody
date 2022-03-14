@@ -91,7 +91,7 @@ class AppRoutes extends Component {
           <Route path="/movimiento/:id" component={ EditarMovimientos } />
 
 
-          <Redirect to="/dashboard" />
+          <Redirect to={"/dashboard"} />
         </Switch>
       </Suspense>
     );
