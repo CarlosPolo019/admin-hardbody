@@ -40,6 +40,10 @@ const RegistrarProducto = lazy(() => import('./productos/Create'));
 const ListadoProducto = lazy(() => import('./productos/List'));
 const EditarProducto = lazy(() => import('./productos/Edit'));
 
+const RegistrarMovimiento = lazy(() => import('./movimientos/Create'));
+const ListadoMovimientos = lazy(() => import('./movimientos/List'));
+const EditarMovimientos = lazy(() => import('./movimientos/Edit'));
+
 
 class AppRoutes extends Component {
   render () {
@@ -82,6 +86,9 @@ class AppRoutes extends Component {
           <Route path="/producto/new" component={ RegistrarProducto } />
           <Route path="/producto/:id" component={ EditarProducto } />
 
+          <Route path="/movimientos" component={ ListadoMovimientos } />
+          <Route path="/movimiento/new" component={ RegistrarMovimiento } />
+          <Route path="/movimiento/:id" component={ EditarMovimientos } />
 
 
           <Redirect to="/dashboard" />
